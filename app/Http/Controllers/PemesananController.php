@@ -88,7 +88,7 @@ class PemesananController extends Controller
 
         $pemesanan->tgl_pemesanan =$request->tgl_pemesanan;
         $pemesanan->biaya =$request->biaya;
-        $pemesanan->id_pembeli =$request->id_pembeli;
+        $pemesanan->id_pelanggan =$request->id_pelanggan;
         $pemesanan->jumlah=$request->jumlah;
         $pemesanan->id_barang =$request->id_barang;
         $pemesanan->tgl_selesai =$request->tgl_selesai;
