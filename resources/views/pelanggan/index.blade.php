@@ -50,10 +50,11 @@
                 @foreach ($pelanggan as $item)
                 <tr>
                     <th scope="row">{{$nomor++}}</th>
-                    <td>{{$item->kode}}</td>
-                    <td>{{$item->jurusan}}</td>
+                    <td>{{$item->nama}}</td>
+                    <td>{{$item->hp}}</td>
+                    <td>{{$item->pelanggan}}</td>
                     <td>
-                        <a href="#" class="btn btn-sm btn-info">edit</a>
+                        <a href="/pelanggan/edit/{{$item->id}}" class="btn btn-sm btn-info">edit</a>
                         <a href="#" class="btn btn-sm btn-danger">hapus</a>
                     </td>
                   </tr>
