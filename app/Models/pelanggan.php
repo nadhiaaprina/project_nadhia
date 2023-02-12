@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pelanggan extends Model
 {
-    use HasFactory;
+    public function pelanggan()
+    {
+        return $this->belongsTo(pelanggan::class);
+    }
 }
